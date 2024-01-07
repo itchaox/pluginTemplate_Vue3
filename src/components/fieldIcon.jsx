@@ -3,7 +3,7 @@
  * @Author     : itchaox
  * @Date       : 2023-12-22 00:35
  * @LastAuthor : itchaox
- * @LastTime   : 2024-01-06 08:58
+ * @LastTime   : 2024-01-07 18:45
  * @desc       : 字段列表 icon
  */
 import { defineComponent } from 'vue';
@@ -198,6 +198,7 @@ export default defineComponent({
           />
         )}
 
+        {/* 双向关联 */}
         {fieldType === 21 && (
           <FileConversionOne
             style={iconStyle}

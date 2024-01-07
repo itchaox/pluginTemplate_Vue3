@@ -3,7 +3,7 @@
  * @Author     : itchaox
  * @Date       : 2023-06-21 11:48
  * @LastAuthor : itchaox
- * @LastTime   : 2023-12-22 00:30
+ * @LastTime   : 2024-01-07 18:43
  * @desc       :
  */
 
@@ -14,6 +14,7 @@ import vue from '@vitejs/plugin-vue';
 import AutoImport from 'unplugin-auto-import/vite';
 import Components from 'unplugin-vue-components/vite';
 import vueJsx from '@vitejs/plugin-vue-jsx';
+import UnoCSS from 'unocss/vite';
 
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers';
 
@@ -34,6 +35,7 @@ export default defineConfig({
     },
   },
   plugins: [
+    UnoCSS(),
     vue(),
     vueJsx(),
 
