@@ -3,19 +3,31 @@
  * @Author     : itchaox
  * @Date       : 2023-09-25 20:55
  * @LastAuthor : itchaox
- * @LastTime   : 2023-12-24 13:37
+ * @LastTime   : 2024-01-07 09:12
  * @desc       : 
 -->
 
 <script setup>
   import Form from './components/Form.vue';
   import { useTheme } from '@/hooks/useTheme';
+  import { Toaster } from 'vue-sonner';
 
   useTheme();
 </script>
 
 <template>
   <main>
+    <!-- 消息提示 -->
+    <Toaster
+      position="top-center"
+      richColors
+      closeButton
+      :duration="1500"
+      :toastOptions="{
+        style: { width: '50vw' },
+      }"
+    />
+
     <Form />
   </main>
 </template>
