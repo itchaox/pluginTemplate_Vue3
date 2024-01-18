@@ -3,7 +3,7 @@
  * @Author     : itchaox
  * @Date       : 2023-12-22 00:35
  * @LastAuthor : itchaox
- * @LastTime   : 2024-01-07 18:45
+ * @LastTime   : 2024-01-18 23:48
  * @desc       : 字段列表 icon
  */
 import { defineComponent } from 'vue';
@@ -85,7 +85,7 @@ export default defineComponent({
         )}
 
         {/* 人员 */}
-        {fieldType === 11 && (
+        {[11, 1003, 1004].includes(fieldType) && (
           <People
             theme='outline'
             size='14'
